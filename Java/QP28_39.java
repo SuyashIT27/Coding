@@ -6,7 +6,7 @@ public class QP28_39 {
         //multiTable();
         //oddSum();
         //factorial();
-        sumDigit();
+        //sumDigit();
 
 
     }
@@ -75,6 +75,36 @@ public class QP28_39 {
     }
     //Q-34 Prime number ?
     public static void primeNumer(){
+   Scanner num = new Scanner(System.in);
+        System.out.print("Enter the number:-");
+        int num1 = num.nextInt();
+        if (num1 == 1) {
+            System.out.println("Not Prime");
+        }
+        for (int i = 2; i <= num1; i++) {
 
+
+            if (num1 % i == 0) {
+                System.out.println("It is not prime number.");
+                break;
+            } else {
+                System.out.println("the given number is prime.");
+                break;
+            }
+
+        }
+    }
+      //Q-35 w.a.p to reverse the digit of the number?
+    public static void reverse() {
+        System.out.print("Enter the number to reverse:-");
+        Scanner num = new Scanner(System.in);
+        int num1 = num.nextInt();
+        int reverse = 0;
+        while (num1 != 0) {
+            int num2 = num1 % 10;
+            reverse = reverse * 10 + num2;
+            num1 = num1 / 10;
+        }
+        System.out.println("Reversed number: " + reverse);
     }
 }
