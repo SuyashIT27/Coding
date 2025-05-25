@@ -107,4 +107,44 @@ public class QP28_39 {
         }
         System.out.println("Reversed number: " + reverse);
     }
+     //Q-36 Print a fibonacci series ?
+    public static void  fiboSeries(){
+        System.out.print("Enter the number:-");
+        Scanner sc=new Scanner(System.in);
+        int num=sc.nextInt();
+        int sum=0;
+        for(int i=0;i<=num;i++){
+            sum=sum+i;
+        }
+        System.out.println("The sum of fibo. series is "+sum);
+    }
+   //Q-37 cheack for the armstrong number?
+    public static void anstrongNumber(int num){
+        int orginal=num;
+        int result=0;
+       String power=String.valueOf(num); //This convert int ino string.
+        int power1=power.length();
+        while(num!=0){
+            int num1=num%10;
+            result+=Math.pow(num1,power1);
+            num=num/10;
+
+        }
+        if (result==orginal) System.out.println("The given number is amstroung");
+        else System.out.println("The given number is not anstroung.");
+    }
+    //Q-38 Number is palindrome?
+    public static void palindrome(int num){
+        int orginal=num;
+        int rev=0;
+        while(num!=0){
+            int num1=num%10;
+            rev=rev*10;
+            rev+=num1;
+            num/=10;
+        }
+       // System.out.println(rev+" "+orginal);
+        if(orginal==rev) System.out.println("The number is palindrome");
+        else System.out.println("The number is not paildrome.");
+    }
 }
