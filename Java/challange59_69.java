@@ -120,4 +120,18 @@ public class challange59_69 {
              if (value%2==0) System.out.print(value+" ");
         }
     }
+     //Q-68 using recursion find the fibo series upto a certain number ?
+    public static void recursionNumber(){
+        int num=20;
+        int front=0;
+        int frontNext=1;
+        int newNum;
+        for(int i=0;i<num;i++){
+            newNum=front+frontNext;
+            front=frontNext;
+            front=newNum;
+            System.out.println(newNum);
+        }
+
+    }
 }
