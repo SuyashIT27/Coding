@@ -1,0 +1,18 @@
+Steps to run react js setup 
+1 create a folder and open the terminal
+2 type npm create vite@latest 
+3 press enter 
+4 enter your project name 
+5 select a framework 
+6 now it is installed 
+7 now write on terminal npm install
+8 now type npm run dev 
+9 To open the link again 
+Make sure you are in the correct folder (where package.json is).
+
+Type: npm run dev
+
+The link will appear again
+10- Press ctrl+L to clear terminal
+11- To import bootstrap type 
+ import 'bootstrap/dist/css/bootstrap.min.css'; in main.jsx file
